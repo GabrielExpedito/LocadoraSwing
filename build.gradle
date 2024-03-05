@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+        mavenCentral()
+    }
+
+application {
+    mainClass = 'locadoraveiculos.client.LocadoraClient'
+}
+
+dependencies {
+    implementation files('library/banco.jar')
+    implementation 'org.postgresql:postgresql:42.7.2'
+
+    implementation 'com.formdev:flatlaf:3.4'
+
+}
+
+description = 'client'
